@@ -1,0 +1,274 @@
+
+html {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+
+/* Menu */
+.nav {
+  position: absolute;
+  overflow: hidden;
+  background-color: white;
+  z-index: 5;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  background: white;
+}
+
+.nav a:hover {
+  background: lightgray;
+  color: black;
+}
+
+/* menu sticky  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/* Header */
+.header {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: .5;
+  height: 800px;
+  text-align: center;
+  width: 100%;
+}
+
+.header h1 h4 {
+  color: darkgray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+
+
+/* Button */
+#button { 
+  border: none;
+  padding: 0px 0px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+#button a {
+  background: none;
+  border: 3px solid white;
+  border-radius: 3px;
+  color: black;
+  display: inline-block;
+  padding: 14px 40px;
+  text-decoration: bold;
+  margin: 0px auto;
+}
+
+
+#button a:hover {
+  background: white;
+  border: 3px solid white;
+  color: black;
+}
+
+
+
+/* Banner */
+#banner {
+  color: black;
+  font-family: 'PT Serif', monospace;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 200px;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+#banner a:hover {
+    text-decoration: none;
+}
+
+
+
+/* ---Containers--- */
+
+
+/* Resume */
+.resume {
+  margin: 40 auto;
+  padding: 100px;
+  overflow: none;
+}
+
+.resume p {
+    width: 800px;
+    margin: 40px 40px 40px 100px;
+    /*text-align: center;*/
+}
+
+.resume h2 {
+    text-align: center;
+}
+
+.reslist {
+	 text-align: center; 
+}
+
+
+/* Gallery */
+.gallery {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery a:hover span { display: block;
+    position: absolute;
+    top: 10px;
+    left: 340px;
+    text-align: center;
+}
+
+.gallery ul { width: 300px; 
+    list-style-type: none;
+}
+
+.gallery li  { display: inline;
+    float: left;
+    padding: 10px;
+}
+
+.gallery img { border-style: none;
+    float: none;
+}
+
+.gallery a { 
+    text-decoration: none;
+    color: #333;
+    font-style: italic;
+}
+
+.gallery span  {
+    display: none; 
+}
+
+
+
+/* About */
+#about {
+  margin: 40 auto;
+  padding: 100px;
+  overflow: scroll;
+  display: block;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    width: 800px;
+    margin: 0 0 0 200px;
+    padding: inherit;
+    text-align: left;
+}
+
+/* About Poloroid Photo */
+.photo {
+    position: absolute;
+    border: 1px solid darkgrey;
+    background-color: white;
+    padding: 15px 15px 60px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+}
+
+.photo a:after {
+  content: attr(title);
+}
+
+
+
+/* Contact */
+.contact {
+  margin: 40 auto;
+  padding: 100px;
+  overflow: none;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+  width: 800px;
+  margin: 0px 0px 0px 200px;
+}
+
+.form {
+   text-align: center;
+   /*border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;*/
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkgray;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    text-align: center;
+  background-color: white;
+}
+
+
+
+
+
+
+/* Clearing */
+.clear {
+    clear: both;
+}
+
